@@ -91,8 +91,6 @@ export default function HomePage() {
             />
             <div className="flex flex-wrap items-center gap-4">
               <LinkButton href="/polygunnerz" variant="solid">Learn more</LinkButton>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/media/images/bded989e23f86158.png" alt="Available on HyperPlay" className="h-12 object-contain" />
             </div>
           </div>
           <div className="relative aspect-[16/9] overflow-hidden border border-line">
