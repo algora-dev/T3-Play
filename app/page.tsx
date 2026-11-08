@@ -95,7 +95,7 @@ export default function HomePage() {
               <img src="/media/images/bded989e23f86158.png" alt="Available on HyperPlay" className="h-12 object-contain" />
             </div>
           </div>
-          <div className="relative aspect-[4/3] overflow-hidden border border-line">
+          <div className="relative aspect-[16/9] overflow-hidden border border-line">
             <Image src="/media/images/8c8057846e9c418f.png" alt="Poly Gunnerz logo art" fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
           </div>
         </div>

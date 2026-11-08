@@ -32,6 +32,7 @@ export const SITE = {
   },
   ambassador: "https://forms.gle/1Dxcp8SoTQthjLYr6",
   visionariesMarket: "https://element.market/collections/t3playvisionaries",
+  visionariesStake: "https://vaults.t3play.com",
   visionariesArticle: "https://t3play.medium.com/t3-visionaries-holder-benefits-7c0c113af690",
   lineaTutorial: "https://www.youtube.com/watch?v=V4DflPkxqE8&t=2s",
   metamaskBuy: "https://metamask.io/buy-crypto/",

@@ -73,7 +73,7 @@ export default function VisionariesPage() {
               </p>
               <div className="mt-6 flex flex-wrap gap-4">
                 <LinkButton href={SITE.visionariesMarket} external variant="solid">Element marketplace</LinkButton>
-                <LinkButton href={SITE.visionariesMarket} external>Stake here</LinkButton>
+                <LinkButton href={SITE.visionariesStake} external>Stake here</LinkButton>
               </div>
             </div>
           </div>

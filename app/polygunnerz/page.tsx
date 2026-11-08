@@ -18,12 +18,6 @@ const SPECS = [
   { label: "Platforms", value: "PC, Mobile, browser" },
 ];
 
-const GALLERY = [
-  { src: "/media/images/0e2b2b939950dbb7.png", alt: "Poly Gunnerz character art" },
-  { src: "/media/images/f2644fe7e4deaeb8.png", alt: "Poly Gunnerz character art" },
-  { src: "/media/images/e1cf7834b6f1a6d5.png", alt: "Poly Gunnerz character art" },
-];
-
 export default function PolyGunnerzPage() {
   return (
     <>
@@ -60,7 +54,6 @@ export default function PolyGunnerzPage() {
               </div>
               <div className="mt-8 flex flex-wrap gap-4">
                 <LinkButton href={SITE.docs.pgLitePaper} external variant="solid">Lite paper</LinkButton>
-                <LinkButton href={SITE.store.polygunnerz} external>Characters</LinkButton>
                 <LinkButton href={SITE.ambassador} external>Ambassador program</LinkButton>
               </div>
             </div>
@@ -77,19 +70,6 @@ export default function PolyGunnerzPage() {
                 ))}
               </dl>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="border-b border-line">
-        <div className="mx-auto max-w-6xl px-6 py-24">
-          <SectionHead eyebrow="Characters" title="Meet the gunnerz" center />
-          <div className="grid gap-6 sm:grid-cols-3">
-            {GALLERY.map((g) => (
-              <div key={g.src} className="relative aspect-square overflow-hidden border border-line">
-                <Image src={g.src} alt={g.alt} fill className="object-cover" sizes="(max-width: 768px) 100vw, 33vw" />
-              </div>
-            ))}
           </div>
         </div>
       </section>
