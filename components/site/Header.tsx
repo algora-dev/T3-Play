@@ -6,9 +6,15 @@ import { SITE } from "@/lib/site";
 
 const NAV = [
   { label: "HOME", href: "/" },
-  { label: "ABOUT", href: "/about" },
+  { label: "STAKING", href: "/visionaries" },
+  { label: "POLY GUNNERZ", href: "/polygunnerz" },
   { label: "TBAG", href: "/tbag" },
+  { label: "ABOUT", href: "/about" },
+  { label: "DOCUMENTS", href: "/documents" },
+  { label: "CONTACT", href: "/contact" },
 ];
+
+const NAV_MOBILE = [...NAV.slice(0, 4), { label: "T-BAGGIEZ MINT", href: "/tbaggiezmint" }, ...NAV.slice(4)];
 
 export default function Header() {
   const [open, setOpen] = useState(false);
@@ -22,19 +28,19 @@ export default function Header() {
           <span className="font-display text-lg font-bold uppercase tracking-[0.25em]">T3 Play</span>
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex" aria-label="Main">
+        <nav className="hidden items-center gap-5 lg:flex" aria-label="Main">
           {NAV.map((item) => (
             <Link
               key={item.href}
               href={item.href}
-              className="font-display text-sm font-semibold uppercase tracking-[0.25em] text-muted transition-colors hover:text-accent"
+              className="font-display text-xs font-semibold uppercase tracking-[0.15em] text-muted transition-colors hover:text-accent"
             >
               {item.label}
             </Link>
           ))}
         </nav>
 
-        <div className="hidden items-center gap-4 md:flex">
+        <div className="hidden items-center gap-4 lg:flex">
           {SITE.socials.map((s) => (
             <a
               key={s.name}
@@ -55,7 +61,7 @@ export default function Header() {
           onClick={() => setOpen((v) => !v)}
           aria-label="Toggle menu"
           aria-expanded={open}
-          className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 md:hidden"
+          className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 lg:hidden"
         >
           <span className={`h-px w-6 bg-ink transition-transform ${open ? "translate-y-[3.5px] rotate-45" : ""}`} />
           <span className={`h-px w-6 bg-ink transition-transform ${open ? "-translate-y-[3.5px] -rotate-45" : ""}`} />
@@ -63,9 +69,9 @@ export default function Header() {
       </div>
 
       {open && (
-        <nav className="border-t border-line bg-black/95 px-6 py-4 md:hidden" aria-label="Mobile">
+        <nav className="border-t border-line bg-black/95 px-6 py-4 lg:hidden" aria-label="Mobile">
           <div className="flex flex-col gap-4">
-            {NAV.map((item) => (
+            {NAV_MOBILE.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}

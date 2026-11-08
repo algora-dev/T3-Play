@@ -12,7 +12,12 @@ export default function Footer() {
             <h3 className="font-display text-xs font-semibold uppercase tracking-[0.3em] text-muted">Site</h3>
             <ul className="mt-4 space-y-2">
               <li><Link href="/" className="text-sm text-ink/80 transition-colors hover:text-accent">Home</Link></li>
+              <li><Link href="/visionaries" className="text-sm text-ink/80 transition-colors hover:text-accent">Visionaries Staking</Link></li>
               <li><Link href="/polygunnerz" className="text-sm text-ink/80 transition-colors hover:text-accent">Poly Gunnerz</Link></li>
+              <li><Link href="/tbag" className="text-sm text-ink/80 transition-colors hover:text-accent">T-Bag</Link></li>
+              <li><Link href="/tbaggiezmint" className="text-sm text-ink/80 transition-colors hover:text-accent">T-Baggiez Mint</Link></li>
+              <li><Link href="/about" className="text-sm text-ink/80 transition-colors hover:text-accent">About</Link></li>
+              <li><Link href="/documents" className="text-sm text-ink/80 transition-colors hover:text-accent">Documents</Link></li>
             </ul>
           </div>
           <div>
